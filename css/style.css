@@ -1,0 +1,283 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+/* HEADER */
+
+.flex-container {
+    background:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 50px;}
+
+img{
+    width: 200px;}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;}
+
+.menu-nav a{
+    text-decoration: none;
+    padding: 23px;
+    color: #ffffff;
+    font-size: 18px;}
+
+.menu-nav a:hover{
+       padding: 1px 5px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-decoration: none;
+        font-size: 22px;
+        overflow: hidden;
+        transition: 1.03s;
+        background: #2196f3;
+        box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px;} 
+
+        /**------------Capa---------------**/
+        .capa{
+            background-image: url(../img/cachoeira.jpg);
+            min-height: 100vh;
+            background-size: cover;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center; /* pras letra ficar no centro lateral*/
+            align-items: center;  /**_pras letras ficar no centro do meio*/
+
+            text-align: center;
+        }
+
+        .capa h1{
+            font-size: 70px;
+margin-bottom: 0; /* colar uma letra na frase do h2*/
+
+text-shadow: 5px 5px black; /**sobra do texto*/
+        }
+
+        .capa h2 { 
+            max-width: 500px;
+            font-size: 30px;
+            margin-top: 0;
+            border-top: 3px solid white
+        }
+        .capa .botao{
+            border: 1px solid white;
+            padding: 10px 20px 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        .capa .botao:hover{
+            overflow: hidden;
+        transition: 1.03s;
+        background: #2196f3;
+        box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px;
+    border:0px} 
+
+    /*---------projeto--------*/
+
+    .projeto {
+        background-image: url(../img/img1.jpg);
+        color: white;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0px 20px 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+.video{
+    flex: 50%;  /*essa o video  ta ocupando50%da tela*/
+    padding: 0px 50px;
+}
+
+.video iframe{
+    width: 100%;
+}
+
+.sobre-projeto{
+flex: 50%;  /*esse texto tambem ocupa 50% da tela junta tudo fica 100% do video e os texto*/
+padding: 0px 50px;
+}
+
+.sobre-projeto h1{
+    font-size: 30px;
+    text-align: center;  /*alinha o texto no centro*/
+    margin: 0;
+    text-shadow: 5px 5px black;
+}
+
+.sobre-projeto p{
+    text-align: justify;
+    
+}
+/*---------Seleção--------*/
+.t-selecao{
+    text-align: center;
+}
+.selecao {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px 0px;
+    flex-wrap: wrap;
+}
+.card{
+    flex: 25%;
+    text-align: center;
+    padding: 30px 0 20px 0px;
+}
+.img-selecao{
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0 auto;
+  
+}
+
+.img-selecao img{
+    max-width: 60%;}
+  
+
+.img-selecao:hover{
+    background-color: lightblue;}
+
+    /*---------Ecopontos--------*/
+.ecopontos{
+    max-width: 100%;
+    background-color: red;
+    padding: 30px 0 20px 0;
+}
+.ecopontos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ecopontos h2{
+    text-align: center;
+    font-size: 16px;
+}
+.container-cards{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card-ecopontos{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    flex: 30%;
+}
+
+.card-ecopontos img{
+    max-width: 100%;
+    height: 300px;
+}
+.card-ecopontos:hover{
+    box-shadow: 2px 7px 8px;
+    transition: 0.07s;
+}
+  /*---------Sobre mim--------*/
+  .sobre{
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 30px 20px 0px;
+    background-color: #f7f7f7;
+  }
+  .coluna{
+      flex: 50%;
+      padding: 0px 40px;
+  }
+  .coluna img{
+      max-width: 100%;}
+
+      .couna h1{
+          text-align: center;
+          font-size: 30px; }
+
+      .coluna h4{
+          text-align: center;  }
+
+          .coluna p{
+              text-align: justify;
+              line-height: 1.6;  /*---------Espaço das linhas--------*/
+          }
+           /*---------Roda pé--------*/
+           footer{
+               display: flex;
+               max-width: 100%;
+               margin: 0 auto;
+               padding: 30px 0px 50px 0px;
+               background-color: #01acea;
+               color: #ffffff;
+           }
+
+           /*---------Responsividade--------*/
+           @media (max-width: 760px){
+
+               /*--------header responsivo--------*/
+               .flex-container{
+                   flex-direction: column;
+                   align-items: center;
+                   padding: 0px;
+               }
+               .menu-nav{
+                   flex-direction: column;
+                   align-items: center;
+                   
+            width: 100%;
+
+               }
+
+               .menu-nav a{
+                   padding: 2px;
+                   width: 100%;
+                   text-align: center;
+                   margin-top: 5px;
+               }
+           }
+
+          .projeto{
+              flex-direction: column;
+          }
+     .video{
+         
+         flex:1;
+         padding: 20px;
+         width: 100%;
+     }
+     .sobre-projeto{
+         padding: 20px;
+     }
+     .selecao{
+         flex-direction: column;
+     }
+
+        .container-cards{
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+
+        .sobre{
+            flex-direction: column;
+        }
+
+        footer{
+            flex-direction: column;
+        }
+     
