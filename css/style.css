@@ -83,7 +83,7 @@ text-shadow: 5px 5px black; /**sobra do texto*/
         box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px;
     border:0px} 
 
-    /*---------projeto--------*/
+    /*---------ODS15--------*/
 
     .projeto {
         background-image: url(../img/img1.jpg);
@@ -94,6 +94,10 @@ text-shadow: 5px 5px black; /**sobra do texto*/
         padding: 30px 0px 20px 0;
         justify-content: center;
         align-items: center;
+        font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Patrick Hand', cursive;
+        
 
     }
 .video{
@@ -108,6 +112,8 @@ text-shadow: 5px 5px black; /**sobra do texto*/
 .sobre-projeto{
 flex: 50%;  /*esse texto tambem ocupa 50% da tela junta tudo fica 100% do video e os texto*/
 padding: 0px 50px;
+
+
 }
 
 .sobre-projeto h1{
@@ -115,15 +121,27 @@ padding: 0px 50px;
     text-align: center;  /*alinha o texto no centro*/
     margin: 0;
     text-shadow: 5px 5px black;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Rowdies', cursive;
+    
 }
 
 .sobre-projeto p{
     text-align: justify;
     
 }
-/*---------Seleção--------*/
+/*---------Impactos--------*/
 .t-selecao{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Rowdies', cursive;
+background-color: #f7f7f7;
+
+   
 }
 .selecao {
     display: flex;
@@ -131,11 +149,14 @@ padding: 0px 50px;
     margin: 0 auto;
     padding: 30px 0 20px 0px;
     flex-wrap: wrap;
+    background-color: #f7f7f7;
+    
 }
 .card{
     flex: 25%;
     text-align: center;
     padding: 30px 0 20px 0px;
+    font-family: 'Rowdies', cursive;
 }
 .img-selecao{
     height: 85px;
@@ -162,11 +183,14 @@ padding: 0px 50px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    
+    
 }
 
 .ecopontos h2{
     text-align: center;
     font-size: 16px;
+    font-family: 'Rowdies', cursive;
 }
 .container-cards{
     display: flex;
@@ -193,8 +217,8 @@ padding: 0px 50px;
   .sobre{
     display: flex;
     max-width: 100%;
-    margin: 0;
-    padding: 0 30px 20px 0px;
+    margin: 0 auto;
+    padding:30px 0px 20px 0px;
     background-color: #f7f7f7;
   }
   .coluna{
@@ -202,13 +226,13 @@ padding: 0px 50px;
       padding: 0px 40px;
   }
   .coluna img{
-      max-width: 100%;}
+      min-width: 100%;}
 
-      .couna h1{
+      .coluna h1{
           text-align: center;
           font-size: 30px; }
 
-      .coluna h4{
+      .coluna h2{
           text-align: center;  }
 
           .coluna p{
@@ -240,9 +264,9 @@ padding: 0px 50px;
                    
             width: 100%;
 
-               }
+               
 
-               .menu-nav a{
+            .menu-nav a{
                    padding: 2px;
                    width: 100%;
                    text-align: center;
@@ -280,4 +304,5 @@ padding: 0px 50px;
         footer{
             flex-direction: column;
         }
-     
+      
+    }
